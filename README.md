@@ -5,6 +5,7 @@
 > 把你的Skill拿到班门前，让祖师爷重新打磨一遍。
 
 [![Agent Skills](https://img.shields.io/badge/Agent%20Skills-luban-blueviolet)](skills/luban/SKILL.md)
+[![skills.sh](https://skills.sh/b/LearnPrompt/luban-skill)](https://skills.sh/LearnPrompt/luban-skill)
 [![实战案例](https://img.shields.io/badge/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B-ai--news--radar%20v0.7.0-green)](skills/luban/examples/ai-news-radar-case.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
