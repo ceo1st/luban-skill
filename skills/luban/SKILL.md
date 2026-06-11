@@ -194,6 +194,8 @@ description: |
 
 ### 九维评分
 
+结构尺的底线项先一键体检：`bash tools/check-skill-repo.sh <目标路径或GitHub仓库链接>`——输出 PASS/WARN/FAIL 加出生证段，FAIL/WARN 直接转成差距清单条目，不要靠肉眼逐项数。
+
 对当前Skill打分，满分100。三把尺一起量：**结构尺**量它写得清不清楚，**实测尺**量它跑起来灵不灵，**活体尺**量它在真实世界里活得好不好。不要只看格式。
 
 ```markdown
