@@ -4,8 +4,8 @@
 
 > 把你的Skill拿到班门前，让祖师爷重新打磨一遍。
 
-[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-luban-blueviolet)](SKILL.md)
-[![实战案例](https://img.shields.io/badge/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B-ai--news--radar%20v0.7.0-green)](examples/ai-news-radar-case.md)
+[![Agent Skills](https://img.shields.io/badge/Agent%20Skills-luban-blueviolet)](skills/luban/SKILL.md)
+[![实战案例](https://img.shields.io/badge/%E5%AE%9E%E6%88%98%E6%A1%88%E4%BE%8B-ai--news--radar%20v0.7.0-green)](skills/luban/examples/ai-news-radar-case.md)
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
 
 **把一个"能用的Skill"，打磨成"能被理解、能被安装、能被传播、能被验证、能持续进化"的公共资产。**
@@ -45,8 +45,17 @@
 
 ## 快速开始
 
+![luban demo](assets/demo.gif)
+
 ```bash
 npx skills add LearnPrompt/luban-skill -g
+```
+
+Claude Code 用户也可以走 plugin marketplace（自动更新）：
+
+```text
+/plugin marketplace add LearnPrompt/luban-skill
+/plugin install luban
 ```
 
 装完对Agent说：
@@ -75,7 +84,7 @@ npx skills add LearnPrompt/luban-skill -g
 - 精选区单一信源占比 **15/20 → 4/20**；首屏渲染 **806 → 523 卡**，页高 **-30%**
 - 验证手段沉淀为仓库工具 `backtest_scoring.py`，并立下"动评分必须附 ≥14 天回放"的项目规矩
 
-全程记录（含事故与教训）：[examples/ai-news-radar-case.md](examples/ai-news-radar-case.md)——每个数字都挂着可点击的PR链接。
+全程记录（含事故与教训）：[skills/luban/examples/ai-news-radar-case.md](skills/luban/examples/ai-news-radar-case.md)——每个数字都挂着可点击的PR链接。
 
 ## 它和同类有什么不同
 
@@ -97,9 +106,12 @@ npx skills add LearnPrompt/luban-skill -g
 
 ```text
 luban-skill/
-├── SKILL.md                        # 工作流本体：五个动作、九步流程、班规与验收单
-├── examples/
-│   └── ai-news-radar-case.md      # 实战案例：真实仓库、真实数字、全程可查证
+├── skills/luban/
+│   ├── SKILL.md                    # 工作流本体：五个动作、九步流程、班规与验收单
+│   └── examples/
+│       └── ai-news-radar-case.md  # 实战案例：真实仓库、真实数字、全程可查证
+├── assets/                         # demo GIF 与可复现的录制脚本（vhs tape）
+├── .claude-plugin/                 # Claude Code plugin marketplace 清单
 ├── README.md
 └── LICENSE
 ```
@@ -121,7 +133,7 @@ luban-skill/
 - [KKKKhazix/khazix-skills · hv-analysis](https://github.com/KKKKhazix/khazix-skills/blob/main/hv-analysis/SKILL.md) — 横纵分析法：纵向追来路，横向看同期，交汇出判断（访行与定位的骨架）
 - [alchaincyf/darwin-skill](https://github.com/alchaincyf/darwin-skill) — 评估 → 改进 → 实测 → 保留或回滚；独立评委视角；棘轮机制（过尺与慢刨的灵魂）
 - [microsoft/SkillOpt](https://github.com/microsoft/SkillOpt) — 冻结基线、有边界的候选编辑、validation-gated接受（验证门的出处）
-- 以及一次真实的全程实战 [ai-news-radar v0.7.0](examples/ai-news-radar-case.md)——活体检查、验证资产沉淀、工位纪律、回炉，都是它教的
+- 以及一次真实的全程实战 [ai-news-radar v0.7.0](skills/luban/examples/ai-news-radar-case.md)——活体检查、验证资产沉淀、工位纪律、回炉，都是它教的
 
 ## License
 
