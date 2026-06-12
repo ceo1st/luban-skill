@@ -11,7 +11,7 @@
     {
       "name": "luban",
       "description": "鲁班 | Luban — 把'能用的Skill'打磨成'能被装、能传播、能验证、能进化'的公共资产。五个动作:验料(挑战前提)·访行(同行对标)·过尺(结构/实测/活体三把尺)·慢刨(冻结基线+验证门)·回炉(发布后迭代)。Battle-tested on a real 1k-star repo.",
-      "version": "2.0.0",
+      "version": "2.1.0",
       "author": {
         "name": "LearnPrompt",
         "url": "https://github.com/LearnPrompt"
